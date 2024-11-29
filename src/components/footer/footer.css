@@ -1,5 +1,6 @@
 .footer-body{
-    height: 20vw;
+    margin-top: 100px;
+    height: 10vw;
     width: 100vw;
     background-color: aqua;
 }

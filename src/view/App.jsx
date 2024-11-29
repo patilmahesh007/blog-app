@@ -7,13 +7,14 @@ import { Link } from 'react-router-dom'
 
 
 function App() {
-  const [blog, setBlog] = useState("https://i.pinimg.com/236x/11/2d/27/112d2768a226eaa0ec1f6d72ec237647.jpg")
-  const [title, setTitle] = useState("title")
+  const [blog, setBlog] = useState("https://i.pinimg.com/736x/24/68/a1/2468a19e048308eabf19eabc4a2ce7a7.jpg")
+  const [title, setTitle] = useState("Gaming")
+  const [link ,setlink] = useState("/gaming")
   return (
     <>
       <Navbar />
       <div className='app-banner'>
-        <img src="https://i.pinimg.com/236x/41/b8/4a/41b84a984e5ce0ca543e2c7a7f0175cb.jpg " className='app-banner-img' alt="" />
+        <img src="https://i.pinimg.com/736x/45/b9/b7/45b9b705837d8669d212e7ff6b28ab19.jpg" className='app-banner-img' alt="" />
       </div>
       <div className='app-container'>
         <div className='app-image-container'>
@@ -24,14 +25,14 @@ function App() {
         </div>
         <div className='app-div-3'>
           <div className='app-div-3-1'>
-            <img src={blog} />
+        <Link to= { "/blog"+  link}>  <img src={blog} alt={title} /></Link>
 
             <h3>{title}
 
             </h3>
           </div>
           <div className='app-div-3-2'>
-            <h2>categories</h2>
+            <h1>Categories</h1>
 
             {CATEGORY.map((item) => (
               <div className="app-trending" key={item.title}>
@@ -41,6 +42,7 @@ function App() {
                     onMouseOver={() => {
                       setBlog(item.img);
                       setTitle(item.title);
+                      setlink(item.category);
                     }}
                  
                     alt={item.title}

@@ -5,7 +5,6 @@ import "./navbar.css";
 function Navbar() {
   const location = useLocation();
 
-  // Check if the current page is "blog"
   const isBlogPage = location.pathname.includes("blog");
 
   const navbarData = [

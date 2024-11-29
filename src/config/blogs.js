@@ -121,7 +121,7 @@ const BLOGS = [
     },
     {
         id: 20,
-        img: "https://i.pinimg.com/236x/da/1a/c2/da1ac26ffb1c0c81e0cf1ed3be86e69e.jpg",
+        img: "https://i.pinimg.com/236x/c4/99/21/c49921a09e1430ddba3b5a9a021e3234.jpg",
         title: "Super Mario Bros.",
         description: "Join Mario and his friends as they navigate through the Mushroom Kingdom to rescue Princess Peach from the evil Bowser. The iconic platformer game features exciting adventures, challenging levels, and power-ups.",
         category: "/gaming",
@@ -133,7 +133,7 @@ const BLOGS = [
       },
       {
         id: 21,
-        img: "https://i.pinimg.com/236x/c9/5a/94/c95a949ed4f09ffdf3da3b073e1e9f1d.jpg",
+        img: "https://i.pinimg.com/474x/7a/86/81/7a868198ac7f516cd4a9b7bef2d721e2.jpg",
         title: "The Legend of Zelda",
         description: "Link embarks on a journey to rescue Princess Zelda and defeat the evil Ganon to save the kingdom of Hyrule. The action-adventure game features exploration, puzzle-solving, and sword combat in a vast open world.",
         category: "/gaming",
