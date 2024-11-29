@@ -1,0 +1,75 @@
+.app-container {
+    display: block;
+    width: 90vw;
+    margin: auto;
+    height: 100vh;
+}
+.app-banner{
+    height: 30vh;
+    width: 100vw;
+    background-color: red;
+
+}
+.app-banner-img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+.app-image-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px 0px 0px;
+    gap: 130px;
+    align-items: center;
+    width: 100%;
+    height: 30vh;
+}
+
+.app-image {
+  width: 200px;
+    border-radius: 4px;
+}
+.app-div-3{
+width: 100%;
+height: 60vh;
+display: flex;
+justify-content: space-between;
+margin-top: 30px;
+}
+.app-div-3-1{
+background-color: white;
+border: 1px solid black;
+width: 60%;
+height: 100%;
+padding: 20px 0px 0px 95px;
+
+}
+.app-div-3-1 img{
+height: 380px;
+}
+.app-div-3-2{
+background-color: white;
+
+border: 1px solid black;
+width: 40%;
+max-height: 100%;
+overflow-y: scroll;
+}
+.app-div-3-2::-webkit-scrollbar{
+display: none;
+}
+.app-trending{
+    margin: 10px;
+    display: flex;
+}
+.app-trending span{
+margin-right: 30px;
+  width: 170px;
+}
+
+.app-trending span img {
+    height: 120px;
+    width: 100%;
+    object-fit: contain;
+    border-radius: 6px;
+}
