@@ -1,28 +1,28 @@
 const CATEGORY = [
     {
         id:1,
-        img:"https://i.pinimg.com/236x/4f/4f/a1/4f4fa17cbe65bdace4503018f34cfea6.jpg",
+        img:"https://i.pinimg.com/736x/24/68/a1/2468a19e048308eabf19eabc4a2ce7a7.jpg",
         title:"Gaming",
         description:"description",
         category:"/gaming"
     },
     {
         id:2,
-        img:"https://i.pinimg.com/236x/8e/aa/c3/8eaac3aa73682abda07cc6d166edb944.jpg",
+        img:"https://i.pinimg.com/736x/8a/c7/32/8ac732633422162fe84d22ece15905ad.jpg",
         title:"Anime",
         description:"description",
         category:"/anime"
     },
     {
         id:3,
-        img:"https://i.pinimg.com/236x/56/ff/5a/56ff5ab4b77765dec0360d4a8e657c20.jpg",
+        img:"https://i.pinimg.com/236x/ce/82/9e/ce829ea0b862deabaf737a93d53121cc.jpg",
         title:"Nature",
         description:"description",
         category:"/nature"
     },
     {
         id:4,
-        img:"https://i.pinimg.com/236x/df/81/ff/df81ff756d7b232bf5e54a82e9fb3243.jpg",
+        img:"https://i.pinimg.com/236x/7e/00/3e/7e003e09291ba44e6ef1f20d790448ac.jpg",
         title:"News",
         description:"description",
         category:"/news"
