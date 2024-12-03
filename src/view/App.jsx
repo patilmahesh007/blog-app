@@ -1,15 +1,26 @@
-import React, { useState, useEffect } from 'react'
-import Navbar from "../components/navbar"
-import Footer from "./../components/footer/footer"
-import "./App.css"
-import CATEGORY from '../config/category'
-import { Link } from 'react-router-dom'
-
+import React, { useState, useEffect } from 'react';
+import Navbar from "../components/navbar";
+import Footer from "./../components/footer/footer";
+import "./App.css";
+import axios from 'axios';  
+import { Link } from 'react-router-dom';
 
 function App() {
-  const [blog, setBlog] = useState("https://i.pinimg.com/736x/24/68/a1/2468a19e048308eabf19eabc4a2ce7a7.jpg")
-  const [title, setTitle] = useState("Gaming")
-  const [link ,setlink] = useState("/gaming")
+  const [blog, setBlog] = useState("https://i.pinimg.com/736x/24/68/a1/2468a19e048308eabf19eabc4a2ce7a7.jpg");
+  const [title, setTitle] = useState("Gaming");
+  const [link, setLink] = useState("/gaming");
+  const [categories, setCategories] = useState([]);  
+
+  useEffect(() => {
+    axios.get("http://localhost:3000/categories")
+      .then((response) => {
+        setCategories(response.data); 
+      })
+    
+  }, []); 
+
+
+
   return (
     <>
       <Navbar />
@@ -25,39 +36,37 @@ function App() {
         </div>
         <div className='app-div-3'>
           <div className='app-div-3-1'>
-        <Link to= { "/blog"+  link}>  <img src={blog} alt={title} /></Link>
-
-            <h3>{title}
-
-            </h3>
+            <Link to={ "/blog" + link }>
+              <img src={blog} alt={title} />
+            </Link>
+            <h3>{title}</h3>
           </div>
           <div className='app-div-3-2'>
             <h1>Categories</h1>
-
-            {CATEGORY.map((item) => (
+            {categories.map((item) => (
               <div className="app-trending" key={item.title}>
-               <Link to= { "/blog"+  item.category}>  <span>
-                  <img
-                    src={item.img}
-                    onMouseOver={() => {
-                      setBlog(item.img);
-                      setTitle(item.title);
-                      setlink(item.category);
-                    }}
-                 
-                    alt={item.title}
-                  />
-                </span></Link>
+                <Link to={ "/blog" + item.category }>
+                  <span>
+                    <img
+                      src={item.img}
+                      onMouseOver={() => {
+                        setBlog(item.img);
+                        setTitle(item.title);
+                        setLink(item.category);
+                      }}
+                      alt={item.title}
+                    />
+                  </span>
+                </Link>
                 <h2>{item.title}</h2>
               </div>
             ))}
-
           </div>
         </div>
       </div>
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

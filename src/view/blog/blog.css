@@ -72,8 +72,8 @@ hr {
 
 .delete-btn {
     position: relative;
-    right: 20px;
-    top: -70px;
+    left: 68vw;
+    top: 70px;
     height: 60px;
     transition: transform 0.2s;
 }
@@ -82,7 +82,16 @@ hr {
     animation: tilt 1s infinite;
 }
 
-
+.edit-btn {
+    background-color: transparent;
+    color: aqua;
+    border: 1px double aqua;
+    padding: 15px 25px;
+    border-radius: 8px;
+    position: relative;
+    left: 62vw;
+    top: -190px;
+}
 
 .blog-add-container {
     position: fixed;

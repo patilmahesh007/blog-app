@@ -6,9 +6,7 @@ import App from "./view/App";
 import Contact from "./view/contact/contact";
 import About from "./view/about/about";
 import Blog from "./view/blog/blog";
-
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
+const root=ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Routes>
